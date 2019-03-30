@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <style>
+
+            body{
+   background-image: linear-gradient(-75deg, rgba(0,0,0,.6), rgba(0,0,0,.6) ),url('13.jpg');
+    background-size: cover;}
+    
+    .login{
+       
+    position: absolute;
+    top:30%;
+    left:40%;
+    right:50%;
+    display: inline;
+    text-align: center;
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28px;
+    white-space: nowrap;
+    font-stretch: condensed;
+    display: inline-block;
+     }
+	 h3{
+       
+    position: absolute;
+    top:70%;
+    left:20%;
+    right:50%;
+    display: inline;
+    text-align: center;
+    color:red;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28px;
+    white-space: nowrap;
+    font-stretch: condensed;
+    display: inline-block;
+     }
+
+     input{
+        margin : 20px 20px 20px 20px;
+        display: inline-block;
+       
+     }
+     #l,#r,#h{
+       
+       font-size: 20px;
+       padding: 15px 32px;
+       text-align: center;
+       border-spacing: 10cm;
+       margin : 10px 10px 10px 10px;
+       border-radius: 8px;
+       background-color: transparent;
+       color: aliceblue;
+       }
+    #l:hover{
+        background-color:black ;
+ color:white;
+ box-shadow: #000;
+ cursor: pointer;
+    }
+    #r:hover{
+        background-color:black ;
+ color:white;
+ box-shadow: #000;
+ cursor: pointer;
+    }
+    #h:hover{
+        background-color:black ;
+ color:white;
+ box-shadow: #000;
+ cursor: pointer;
+    }
+
+        </style>
+        
+    </head>
+    <body>
+        <div class='login'>
+        <form name="loginform" method="POST" action="1.php">
+            Username
+            <input type='text' name='username'></input>
+            <br>
+            Password <input type="password" name='password'></input><br>
+            <input id=l type='submit' value='Login' ></input>
+
+            <input id=r type="button" value='Reset'></input>
+            <input id=h type="button" value='Home'></input>
+
+            <script>
+               var resetButton= document.getElementById("r");
+    resetButton.addEventListener('click',rst);
+    function rst()
+    {
+     location.reload();
+    }
+
+    var back= document.getElementById("h");
+    back.addEventListener('click',backf);
+    function backf(){
+        window.location.href='try.html';
+    }
+     </script>
+           
+        </form>
+ 
+ </div>
+ 		<h3> "NOTE : If you are login for the first time then it will register your account."</h3>
+
+ 
+    </body>
+  
+</html>

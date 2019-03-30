@@ -1,0 +1,84 @@
+
+    
+body{
+   background-image: linear-gradient(-75deg, rgba(0,0,0,.6), rgba(0,0,0,.6) ),url('13.jpg');
+    background-size: cover;
+    
+}
+.drawing{
+    position: absolute;
+    top:10%;
+    left:30%;
+    right:50%;
+    display: inline;
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28px;
+    white-space: nowrap;
+    font-stretch: condensed;
+}
+
+.welcome{
+   position: absolute;
+    top: 40%;
+    left: 20%;
+    color: aliceblue;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-stretch: condensed;
+
+}
+h4{
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    color: aliceblue;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-stretch: condensed;
+    text-shadow: antiquewhite;
+
+	-webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.938) 40%, #000 60%, rgba(0,0,0,.6) 80%);
+  -webkit-mask-size: 200%;
+  animation: shine 4s linear infinite;
+  text-shadow: #000;
+}
+@keyframes shine {
+    from { -webkit-mask-position: 150%; }
+    to { -webkit-mask-position: -50%; }
+  }
+.continue{
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-stretch: condensed;
+}
+input{
+    font-size: 20px;
+    padding: 15px 32px;
+    text-align: center;
+    border-spacing: 10cm;
+    margin : 10px 10px 10px 10px;
+    border-radius: 8px;
+    background-color: transparent;
+    color: aliceblue;
+}
+input:hover{
+ background-color:black ;
+ color:white;
+ box-shadow: #000;
+
+}
+#opt {
+    margin-bottom: 25%;
+display: block;
+ cursor: pointer;
+ transition: all 0.5s;
+}
